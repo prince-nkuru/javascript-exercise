@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+  /*  
+function number(a , b){
+return a + b;
+
+}
+
+let result = number(20,30);
+  console.log("the sum is " + result);
+
+
+ function greet(name){
+  if(name === undefined){
+    console.log('hi there');
+  } else {
+    console.log(`hello ${name}`);
+  }
+ 
+ }
+ greet("simon");
+
+ */
+
+ // objects
+ const identification = {
+  names : 'prince' ,
+  school : 'university of Rwanda',
+  department : 'Pharmacy'
+ }
+ let x = identification;
+ x.names = 'NKURUNZIZA Prince'
+
+ console.log('my name is ' + identification.names + ' i study in ' + identification.school + ' in department of ' + identification.department);
+
+ // arrays
+
+ const cars = ["bmw", "fiat", "fod"];
+  cars[2] = "FOD"; // to change element.
+ console.log(cars.toString()); // to convert to string
+ console.log(cars[cars.length-1]); // to access last element
+  cars.push("toyota"); // add new element (toyota ) to a list
+  cars[cars.length] = "range rover";  // Adds "range rover" to cars
+  console.log(cars);
+
+  // join can work the same as toString but with join you can specify the separator
+  // at(index) work like [index] for accessing element
+// pop() remove last item and shift() remove first item and unshift() add first item
+ // instead of using delete , use pop and shift because delete leave undefined holes
+
+ // merging two arrays
+
+ const couple1 = ["levis", "janvier" , "fabrice"]
+ const couple2 = ["james", "arsene", "prince"]
+ const couple3 = ["brian", "jonathan"]
+
+ const fam = couple1.concat(couple2, couple3); // it can also add string concat("string")
+ console.log(fam);
+
+ couple2.splice(2, 0, "brian", "jonathan");    /*splice add items. 1st parameter specify position of adding new parameter, 2nd parameter specify how many items to be removed.
+ 
+ splice can also remove item if set well. splice(0, 1).
+ toSplice method does not alter original one*/
+
+ const triple = fam.slice(5); // slice get new array from the original
+ console.log(triple);
+
+ console.log(couple2);
+ // indexOf and lastIndexOf checks the position of item
+ // include check if given item is included in an array and results is true or false
+ // The find() method returns the value of the first array element that passes a test function.
+  // The findIndex() method returns the index of the first array element that passes a test function
+  /* findLast() method that will start from the end of an array and return the value of the first element that satisfies a condition.*/
+  // The findLastIndex() method finds the index of the last element that satisfies a condition.
+  </script>
+</body>
+</html>
